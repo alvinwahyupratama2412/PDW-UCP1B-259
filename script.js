@@ -47,3 +47,8 @@ function pauseAudio()
 {
     document.getElementById("audio").pause();
 }
+
+function tampilPesan() 
+{
+    alert("Selamat datang di Tech Community!");
+}
