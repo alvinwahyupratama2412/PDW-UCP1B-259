@@ -1,27 +1,26 @@
 <html>
 <head>
     <title>Gallery</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <h1>MultiMedia</h1>
-    <img src="img/programer-1110x740.jpg" class = "banner">
+<body class="bg-light text-center">
 
-    <br>
-    <p> Video</p>
-    <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/2OPVViV-GQk?si=Itys9-ZMWOJvBpir" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <br>
-    <audio controls id="audio" src="mp3/audio.mp3"></audio>
-    <button onclick="playAudio()">Play</button>
-    <button onclick="pauseAudio()">Pause</button>
-    <br>
-    <a href="./index.html">Kembali</a>
+<div class="container mt-4">
+    <h1>Multimedia</h1>
+
+    <img src="img/programer-1110x740.jpg" class="img-fluid rounded shadow mb-3">
+
+    <iframe class="w-100 mb-3" height="315"
+    src="https://www.youtube.com/embed/2OPVViV-GQk"></iframe>
+
+    <audio controls class="mb-2" id="audio" src="mp3/audio.mp3"></audio><br>
+    <button onclick="playAudio()" class="btn btn-success">Play</button>
+    <button onclick="pauseAudio()" class="btn btn-danger">Pause</button>
+
+    <br><br>
+    <a href="./index.html" class="btn btn-secondary">Kembali</a>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
