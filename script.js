@@ -31,5 +31,7 @@ if (form)
         let hasil = `Nama: ${nama}, Email: ${email}, Minat: ${minat}`;
         document.getElementById("output").innerText = hasil;
 
+        data.push({ nama, email, minat });
+
     });
 }
