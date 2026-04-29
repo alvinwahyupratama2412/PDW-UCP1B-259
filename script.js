@@ -37,3 +37,13 @@ if (form)
 
     });
 }
+
+function playAudio() 
+{
+    document.getElementById("audio").play();
+}
+
+function pauseAudio() 
+{
+    document.getElementById("audio").pause();
+}
