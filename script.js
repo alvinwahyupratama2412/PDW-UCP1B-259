@@ -28,5 +28,8 @@ if (form)
         let email = document.getElementById("email").value;
         let minat = document.getElementById("minat").value;
 
+        let hasil = `Nama: ${nama}, Email: ${email}, Minat: ${minat}`;
+        document.getElementById("output").innerText = hasil;
+
     });
 }
