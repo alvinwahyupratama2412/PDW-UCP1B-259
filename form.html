@@ -2,17 +2,17 @@
     <head>  Pendaftaran </head>
     <link rel=" stylesheet" href="style.css">
     <body>
-        <form>
+        <form id="formData">
             <fieldset>
                 <p>
-                   Nama Lengkap : <input type="text" name="Nama">
+                   Nama Lengkap : <input type="text" id="nama" name="Nama">
                 </p>
                 <p>
-                    Email : <input type="email" name="Email">
+                    Email : <input type="email" id="email" name="Email">
                 </p>
                 <p>
                   Bidang Minat : 
-                  <select>
+                  <select id="minat">
                     <option>Data</option>
                     <option>Jaringan</option>
                     <option>Pemrograman</option>
@@ -23,6 +23,8 @@
                 </p>
             </fieldset>
         </form>
+        <p id="output"></p>
         <button class="back"><a href="index.html">Home</a></button>
+        <script src="script.js"></script>
     </body>
 </html>
