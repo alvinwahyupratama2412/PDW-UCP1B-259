@@ -33,5 +33,7 @@ if (form)
 
         data.push({ nama, email, minat });
 
+        alert("Data berhasil ditambahkan!");
+
     });
 }
