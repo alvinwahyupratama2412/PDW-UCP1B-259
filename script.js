@@ -1,4 +1,4 @@
-let data = [
+let data = JSON.parse(localStorage.getItem("anggota")) || [
     { nama: "Budi", email: "budi@gmail.com", minat: "Programming" },
     { nama: "Siti", email: "siti@gmail.com", minat: "Data" }
 ];
@@ -32,8 +32,10 @@ if (form)
         document.getElementById("output").innerText = hasil;
 
         data.push({ nama, email, minat });
+        localStorage.setItem("anggota", JSON.stringify(data));
 
         alert("Data berhasil ditambahkan!");
+        window.location.href = "index.html";
 
     });
 }
